@@ -7,48 +7,55 @@
     <title>EbookLand</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ebl-nav">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#">
-            <img src="images/header-logo.png" alt="Logo">
+            <img src="images/Logo.png" alt="Logo">
           </a>
+          <button class="navbar-toggler float-sm-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-              </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li><a href="#">Track Order</a></li>
-            <li><a href="#">Sign In/Register</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign in / Register</a>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- SEARCH SECTION -->
-    <div class="ebl-search">
+    <!-- BANNER SECTION -->
+    <div class="ebl-banner">
       <div class="ebl-search-inner">
-        <h2>Serving Delhi University Students Since 1968</h2>
+        <h2 class="cursive-text">Serving Delhi University Students Since 1968</h2>
         <form>
           <div class="inner-form">
             <div class="input-field">
@@ -72,7 +79,7 @@
           <div class="cell-wrapper">
             <span><i class="fa fa-truck" aria-hidden="true"></i></span>
             <div class="cell-meta">
-              <span>Free Shipping Item</span>
+              <span class="font-weight-bold">Free Shipping</span>
               <span>Orders over INR 1000</span>
             </div>
           </div>
@@ -81,7 +88,7 @@
           <div class="cell-wrapper">
             <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
             <div class="cell-meta">
-              <span>Latest Syllabus</span>
+              <span class="font-weight-bold">Latest Syllabus</span>
               <span>Get the latest here</span>
             </div>
           </div>
@@ -90,7 +97,7 @@
           <div class="cell-wrapper">
             <span><i class="fa fa-book" aria-hidden="true"></i></span>
             <div class="cell-meta">
-              <span>Over 10 Million</span>
+              <span class="font-weight-bold">Over 10 Million</span>
               <span>Books available online</span>
             </div>
           </div>
@@ -99,7 +106,7 @@
           <div class="cell-wrapper">
             <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
             <div class="cell-meta">
-              <span>Help & Support</span>
+              <span class="font-weight-bold">Help & Support</span>
               <span>Call us : + 0123.4567.89</span>
             </div>
           </div>
@@ -345,7 +352,7 @@
           <div class="ebl-col-2">
             <div class="col">
               <a href="#" class="footer-logo">
-                <img src="images/footer-logo.png">
+                <img src="images/Logo.png">
               </a>
               <p class="site-desc">
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -418,10 +425,9 @@
     </footer>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
