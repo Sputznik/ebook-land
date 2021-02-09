@@ -52,5 +52,12 @@ jQuery(document).ready(function(){
 
 			$this.addClass( 'loaded' );
 	});
+	jQuery('.ebl-stars i').hover( function(){
+		$(this).removeClass('fa-star-o');
+		$(this).addClass('fa-star');
+	}).mouseout(function(){
+		$(this).addClass('fa-star-o');
+		$(this).removeClass('fa-star');
+	});
 
 });

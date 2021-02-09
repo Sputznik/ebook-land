@@ -48,7 +48,7 @@
               <a class="nav-link" href="#">Sign in / Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
+              <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -58,134 +58,134 @@
     <!-- BANNER SECTION -->
     <div class="ebl-banner-small">
       <div class="ebl-search-inner">
-        <h2 class="cursive-text">Online Store</h2>
-        <form>
-          <div class="inner-form">
-            <div class="input-field">
-              <input id="search" type="text" placeholder="What're you searching for?" />
-            </div>
-            <div class="input-field">
-              <a class="btn-search">
-                <span class="desktop">Search<i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                <span class="mobile"><i class="fa fa-search" aria-hidden="true"></i></span>
-              </a>
-            </div>
-          </div>
-        </form>
+        <h2 class="cursive-text">Your Cart</h2>
       </div>
     </div>
 
 
     <!-- MAIN CONTENT -->
-
-    <div class="container-fluid ebl-books-wrapper" id="main">
+    <div class="container ebl-books-wrapper" id="main">
       <div class="row">
-        <!-- FILTER FORM -->
-        <div class="col-sm-3 ebl-filter-form border-right">
-          <div>
-            <a role="button" class="btn btn-outline-dark d-block d-sm-none mb-4" href="#ebl-list-header"><i class="fa fa-arrow-down"></i> Skip to main content</a>
-            <h3>Filter Books</h3>
-
-            <div class="ebl-filter my-5">
-              <h4>By Stream</h4>
-              <form>
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option selected>Science</option>
-                    <option value="1">Course Name 1</option>
-                    <option value="2">Course Name 2</option>
-                    <option value="3">Course Name 3</option>
-                  </select>
-                  <select class="custom-select">
-                    <option selected>Commerce</option>
-                    <option value="1">Course Name 1</option>
-                    <option value="2">Course Name 2</option>
-                    <option value="3">Course Name 3</option>
-                  </select>
-                  <select class="custom-select">
-                    <option selected>Arts & Humanities</option>
-                    <option value="1">Course Name 1</option>
-                    <option value="2">Course Name 2</option>
-                    <option value="3">Course Name 3</option>
-                  </select>
-                </div>
-              </form>
-            </div>
-
-            <div class="ebl-filter my-5">
-              <h4>By Semester</h4>
-              <form>
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option selected>All</option>
-                    <option value="1">First</option>
-                    <option value="2">Second</option>
-                    <option value="3">Third</option>
-                  </select>
-                </div>
-              </form>
-            </div>
-
-            <div class="ebl-filter my-5">
-              <h4>By Type</h4>
-              <div class="form-group">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Secondhand</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label" for="customCheck2">Question Papers</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck3">
-                  <label class="custom-control-label" for="customCheck3">Reference</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="ebl-filter my-5">
-              <h4>By Price Range</h4>
-              <div class="form-group">
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio1">Below ₹300</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio2">₹300 to ₹500</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio3">₹500 to ₹1000</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio4">Above ₹1000</label>
-                </div>
-              </div>
-            </div>
-
+        <div class="col-sm-12">
+          <div class="ebl-breadcrumb">
+            <p><a href="#">Home</a> > <a href="#">Store</a> > Cart</p>
           </div>
         </div>
-        <!-- PRODUCT LIST -->
-        <div class="col-sm-9">
-          <div class="pb-3 border-bottom border-dark" id="ebl-list-header">
-            <div class="ebl-breadcrumb">
-              <p><a>Home</a> > <a>Store</a> > Category-name</a></p>
-            </div>
-            <div class="ebl-list-title-sort row">
-              <h1 class="font-weight-bold col-sm-8">Category Name</h1>
-              <select class="custom-select col-sm-4">
-                <option selected>Sort List</option>
-                <option value="1">By Title</option>
-                <option value="2">By Price</option>
-                <option value="3">By Deliver Time</option>
-              </select>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Book Title</th>
+                  <th scope="col">Book Cover</th>
+                  <th scope="col">Rate</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <h5>Book Title: Name of the Book</h5>
+                    <p>By Dr. Professor Name</p>
+                  </td>
+                  <td><img src="images/img_math_1.jpg" width="100"></td>
+                  <td>₹599/-</td>
+                  <td>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" min=1 max=10 value="1" aria-label="book-quantity" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-refresh"></i></button>
+                      </div>
+                    </div>
+                  </td>
+                  <td><strong>₹599/-</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <h5>Book Title: A Very Very Long Name of the Book</h5>
+                    <p>By Dr. Professor Name, Dr. Science Teacher</p>
+                  </td>
+                  <td><img src="images/img_1.jpg" width="100"></td>
+                  <td>₹1,599/-</td>
+                  <td>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" min=1 max=10 value="1" aria-label="Book Order Quantity" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-refresh"></i></button>
+                      </div>
+                    </div>
+                  </td>
+                  <td><strong>₹1,599/-</strong></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan="3"><h4 class="text-right">Total:</h4></td>
+                  <td>2</td>
+                  <td><h4>₹2,198/-</h4></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-sm-5">
+          <h5>Discounts</h5>
+          <div class="input-group mb-4">
+            <input type="text" class="form-control" placeholder="Enter Coupon" aria-label="Discount Coupon" aria-describedby="button-discount">
+            <div class="input-group-append">
+              <button class="btn btn-dark" type="button" id="button-discount"><i class="fa fa-check-circle"></i> Apply</button>
             </div>
           </div>
-          <div class="ebl-books row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-            <div class="ebl-book col px-4">
+          <hr class="my-4">
+          <h5>Shipping Time & Cost</h5>
+          <div class="input-group mb-4">
+            <input type="number" class="form-control" placeholder="Enter Pincode" aria-label="Shipping Pincode" aria-describedby="button-shipping-calc">
+            <div class="input-group-append">
+              <button class="btn btn-dark" type="button" id="button-shipping-calc"><i class="fa fa-refresh"></i> Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <table class="table table-borderless bg-light text-right">
+           <tbody>
+             <tr>
+               <th scope="row">Discount:</th>
+               <td>₹0</td>
+             </tr>
+             <tr>
+               <th scope="row">Shipping Cost:</th>
+               <td>₹0</td>
+             </tr>
+             <tr>
+               <th scope="row">Taxes @5%:</th>
+               <td>₹100/-</td>
+             </tr>
+             <tr>
+               <th scope="row"><h4>Total Payable:</h4></th>
+               <td><h4><strong>₹2,298/-</strong></h4></td>
+             </tr>
+           </tbody>
+          </table>
+          <a class="btn btn-lg ebl-btn-red float-right" href="checkout.html">Checkout</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="ebl-books-wrapper">
+        <div class="ebl-slider-headline">
+          <h2>You May Be Interested In</h2>
+        </div>
+        <div class="ebl-books-slider-wrap">
+          <div class="ebl-books-slider" data-auto="false" data-infinite="true" data-arrows="true" data-slide="4" data-behaviour="ebl-books-slider">
+            <div class="ebl-book">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
@@ -203,7 +203,7 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
+            <div class="ebl-book">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
@@ -221,7 +221,7 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
+            <div class="ebl-book">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
@@ -239,8 +239,8 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
+            <div class="ebl-book">
+              <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
                   <span class="title">Book Title</span>
@@ -257,44 +257,8 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
-              <div class="ebl-book-meta">
-                <div class="col-left">
-                  <span class="title">Book Title</span>
-                  <span class="author">Author's Name</span>
-                  <span class="price">INR Price</span>
-                </div>
-                <div class="col-right">
-                  <a href="#">
-                    <i class="fa fa-heart-o"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-shopping-cart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
-              <div class="ebl-book-meta">
-                <div class="col-left">
-                  <span class="title">Book Title</span>
-                  <span class="author">Author's Name</span>
-                  <span class="price">INR Price</span>
-                </div>
-                <div class="col-right">
-                  <a href="#">
-                    <i class="fa fa-heart-o"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-shopping-cart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
+            <div class="ebl-book">
+              <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
                   <span class="title">Book Title</span>
@@ -312,26 +276,12 @@
               </div>
             </div>
           </div>
-
-          <!-- INNER PAGINATION -->
-          <nav aria-label="Page navigation" class="mt-5">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-              </li>
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
         </div>
+        <a href="#" class="shop-all-mob">
+          <span>Shop All &gt;</span>
+        </a>
       </div>
     </div>
-
-
 
 
     <footer>

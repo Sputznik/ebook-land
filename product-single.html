@@ -40,7 +40,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="product-list.html">Product List</a>
-                <a class="dropdown-item" href="product-single.html">Single Product</a>
+                <a class="dropdown-item" href="#">Single Product</a>
                 <a class="dropdown-item" href="page.html">Static Page</a>
               </div>
             </li>
@@ -48,7 +48,7 @@
               <a class="nav-link" href="#">Sign in / Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
+              <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -58,134 +58,109 @@
     <!-- BANNER SECTION -->
     <div class="ebl-banner-small">
       <div class="ebl-search-inner">
-        <h2 class="cursive-text">Online Store</h2>
-        <form>
-          <div class="inner-form">
-            <div class="input-field">
-              <input id="search" type="text" placeholder="What're you searching for?" />
-            </div>
-            <div class="input-field">
-              <a class="btn-search">
-                <span class="desktop">Search<i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                <span class="mobile"><i class="fa fa-search" aria-hidden="true"></i></span>
-              </a>
-            </div>
-          </div>
-        </form>
+        <h2 class="cursive-text">Book Title: Long Name of The Book Goes Here</h2>
+        <p>By Dr. Maths Professor, Dr. Science Teacher</p>
       </div>
     </div>
 
 
     <!-- MAIN CONTENT -->
-
-    <div class="container-fluid ebl-books-wrapper" id="main">
+    <div class="container ebl-books-wrapper" id="main">
       <div class="row">
-        <!-- FILTER FORM -->
-        <div class="col-sm-3 ebl-filter-form border-right">
-          <div>
-            <a role="button" class="btn btn-outline-dark d-block d-sm-none mb-4" href="#ebl-list-header"><i class="fa fa-arrow-down"></i> Skip to main content</a>
-            <h3>Filter Books</h3>
-
-            <div class="ebl-filter my-5">
-              <h4>By Stream</h4>
-              <form>
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option selected>Science</option>
-                    <option value="1">Course Name 1</option>
-                    <option value="2">Course Name 2</option>
-                    <option value="3">Course Name 3</option>
-                  </select>
-                  <select class="custom-select">
-                    <option selected>Commerce</option>
-                    <option value="1">Course Name 1</option>
-                    <option value="2">Course Name 2</option>
-                    <option value="3">Course Name 3</option>
-                  </select>
-                  <select class="custom-select">
-                    <option selected>Arts & Humanities</option>
-                    <option value="1">Course Name 1</option>
-                    <option value="2">Course Name 2</option>
-                    <option value="3">Course Name 3</option>
-                  </select>
-                </div>
-              </form>
-            </div>
-
-            <div class="ebl-filter my-5">
-              <h4>By Semester</h4>
-              <form>
-                <div class="form-group">
-                  <select class="custom-select">
-                    <option selected>All</option>
-                    <option value="1">First</option>
-                    <option value="2">Second</option>
-                    <option value="3">Third</option>
-                  </select>
-                </div>
-              </form>
-            </div>
-
-            <div class="ebl-filter my-5">
-              <h4>By Type</h4>
-              <div class="form-group">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Secondhand</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label" for="customCheck2">Question Papers</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck3">
-                  <label class="custom-control-label" for="customCheck3">Reference</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="ebl-filter my-5">
-              <h4>By Price Range</h4>
-              <div class="form-group">
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio1">Below ₹300</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio2">₹300 to ₹500</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio3">₹500 to ₹1000</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadio4">Above ₹1000</label>
-                </div>
-              </div>
-            </div>
-
+        <div class="col-sm-12">
+          <div class="ebl-breadcrumb">
+            <p><a href="#">Home</a> > <a href="#">Store</a> > <a href="#">Mathematics</a> > Product-Name</p>
           </div>
         </div>
-        <!-- PRODUCT LIST -->
-        <div class="col-sm-9">
-          <div class="pb-3 border-bottom border-dark" id="ebl-list-header">
-            <div class="ebl-breadcrumb">
-              <p><a>Home</a> > <a>Store</a> > Category-name</a></p>
-            </div>
-            <div class="ebl-list-title-sort row">
-              <h1 class="font-weight-bold col-sm-8">Category Name</h1>
-              <select class="custom-select col-sm-4">
-                <option selected>Sort List</option>
-                <option value="1">By Title</option>
-                <option value="2">By Price</option>
-                <option value="3">By Deliver Time</option>
-              </select>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 ebl-product-img"><img src="images/img_math_1.jpg" /></div>
+        <div class="col-sm-7">
+          <h2 class="ebl-price">₹ 1,499/-</h2>
+          <small class="ebl-stock"><i class="fa fa-check"></i> In-Stock!</small>
+          <p>Categorised Under: Mathematics<br>Type: Reference, Secondhand</p>
+          <hr>
+          <div class="table-responsive">
+            <table class="table table-borderless table-sm">
+             <tbody>
+               <tr>
+                 <th scope="row">Year of publishing</th>
+                 <td>2016</td>
+               </tr>
+               <tr>
+                 <th scope="row">Stream</th>
+                 <td>Science</td>
+               </tr>
+               <tr>
+                 <th scope="row">Semester</th>
+                 <td>2nd</td>
+               </tr>
+               <tr>
+                 <th scope="row">ISBN</th>
+                 <td>0275151o87510</td>
+               </tr>
+               <tr>
+                 <th scope="row">Binding</th>
+                 <td>Paperback</td>
+               </tr>
+               <tr>
+                 <th scope="row">Attribute</th>
+                 <td>Attribute-value</td>
+               </tr>
+               <tr>
+                 <th scope="row">Attribute</th>
+                 <td>Attribute-value</td>
+               </tr>
+             </tbody>
+            </table>
           </div>
-          <div class="ebl-books row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-            <div class="ebl-book col px-4">
+          <button class="btn ebl-btn-red"><i class="fa fa-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-outline-secondary"><i class="fa fa-plus"></i> Add to Wishlist</button>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-sm-6">
+          <h3>Description</h3>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Vel pretium lectus quam id leo in vitae. Neque gravida in fermentum et sollicitudin ac orci phasellus. Ut lectus arcu bibendum at. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
+          <p>Vel pretium lectus quam id leo in vitae. Neque gravida in fermentum et sollicitudin ac orci phasellus. Ut lectus arcu bibendum at. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
+        </div>
+        <div class="col-sm-6">
+          <h3>Ratings & Reviews</h3>
+          <h4 class="text-warning"><i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <i class="fa fa-star-o"></i> <small>12 Ratings</small></h4>
+          <div class="ebl-reviews card my-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Rajesh K:</strong> Urna et pharetra pharetra massa massa ultricies mi quis hendrerit</li>
+              <li class="list-group-item"><strong>Shalini:</strong> Urna et pharetra pharetra massa massa ultricies mi quis hendrerit mi quis hendrerit</li>
+              <li class="list-group-item"><strong>Aqib Usman:</strong> Excepteur sint occaecat cupidatat</li>
+            </ul>
+          </div>
+          <p class="text-center"><button class="btn btn-sm"><i class="fa fa-align-justify"></i> Load More Reviews</button></p>
+          <hr>
+          <div class="ebl-review-submit">
+            <h4>Leave a Review</h4>
+            <form>
+              <h4 class="text-warning ebl-stars"><i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></h4>
+              <textarea rows="6" style="width:100%"></textarea>
+              <button class="btn ebl-btn-red"><i class="fa fa-pencil"></i> Submit Review</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="ebl-books-wrapper">
+        <div class="ebl-slider-headline">
+          <h2>Related Books</h2>
+        </div>
+        <div class="ebl-books-slider-wrap">
+          <div class="ebl-books-slider" data-auto="false" data-infinite="true" data-arrows="true" data-slide="4" data-behaviour="ebl-books-slider">
+            <div class="ebl-book">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
@@ -203,7 +178,7 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
+            <div class="ebl-book">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
@@ -221,7 +196,7 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
+            <div class="ebl-book">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
@@ -239,8 +214,8 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
+            <div class="ebl-book">
+              <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
                   <span class="title">Book Title</span>
@@ -257,44 +232,8 @@
                 </div>
               </div>
             </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
-              <div class="ebl-book-meta">
-                <div class="col-left">
-                  <span class="title">Book Title</span>
-                  <span class="author">Author's Name</span>
-                  <span class="price">INR Price</span>
-                </div>
-                <div class="col-right">
-                  <a href="#">
-                    <i class="fa fa-heart-o"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-shopping-cart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
-              <div class="ebl-book-meta">
-                <div class="col-left">
-                  <span class="title">Book Title</span>
-                  <span class="author">Author's Name</span>
-                  <span class="price">INR Price</span>
-                </div>
-                <div class="col-right">
-                  <a href="#">
-                    <i class="fa fa-heart-o"></i>
-                  </a>
-                  <a href="#">
-                    <i class="fa fa-shopping-cart"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="ebl-book col px-4">
-              <img src="images/img_1.jpg" alt="">
+            <div class="ebl-book">
+              <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
                 <div class="col-left">
                   <span class="title">Book Title</span>
@@ -312,26 +251,12 @@
               </div>
             </div>
           </div>
-
-          <!-- INNER PAGINATION -->
-          <nav aria-label="Page navigation" class="mt-5">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-              </li>
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
         </div>
+        <a href="#" class="shop-all-mob">
+          <span>Shop All &gt;</span>
+        </a>
       </div>
     </div>
-
-
 
 
     <footer>

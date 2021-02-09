@@ -40,7 +40,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="product-list.html">Product List</a>
-                <a class="dropdown-item" href="#">Single Product</a>
+                <a class="dropdown-item" href="product-single.html">Single Product</a>
                 <a class="dropdown-item" href="page.html">Static Page</a>
               </div>
             </li>
@@ -58,49 +58,145 @@
     <!-- BANNER SECTION -->
     <div class="ebl-banner-small">
       <div class="ebl-search-inner">
-        <h2 class="cursive-text">About Bookland</h2>
+        <h2 class="cursive-text">Checkout</h2>
       </div>
     </div>
 
 
     <!-- MAIN CONTENT -->
-
-    <div class="container my-5" id="main">
+    <div class="container ebl-books-wrapper" id="main">
       <div class="row">
         <div class="col-sm-12">
-          <p>The view of the earth from the moon fascinated me - a small disk, 240,000 miles away. It was hard to think that that little thing held so many problems, so many frustrations. Raging nationalistic interests, famines, wars, pestilence don't show from that distance. I'm convinced that some wayward stranger in a space-craft, coming from some other part of the heavens, could look at earth and never know that it was inhabited at all. But the samw wayward stranger would certainly know instinctively that if the earth were inhabited, then the destinies of all who lived on it must inevitably be interwoven and joined. We are one hunk of ground, water, air, clouds, floating around in space. <strong>From out there it really is 'one world'.</strong></p>
+          <div class="ebl-breadcrumb">
+            <p><a href="#">Home</a> > <a href="#">Store</a> > Cart > Checkout</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Shipping Address:</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Billing and Shipping Address are Different
+            </label>
+          </div>
+          <form class="my-4">
+            <div class="input-group my-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">First & last name</span>
+              </div>
+              <input type="text" aria-label="First name" class="form-control">
+              <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <p>Address:</p>
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Address Line 1</span>
+              </div>
+              <input type="text" aria-label="Address Line 1" class="form-control">
+            </div>
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Address Line 2</span>
+              </div>
+              <input type="text" aria-label="Address Line 2" class="form-control">
+            </div>
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text">City</span>
+              </div>
+              <input type="text" aria-label="City" class="form-control">
+            </div>
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">State</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">Delhi</option>
+                <option value="2">Haryana</option>
+                <option value="3">Uttar Pradesh</option>
+              </select>
+            </div>
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect02">District</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="1">District Name 1</option>
+                <option value="2">District Name 2</option>
+                <option value="3">District Name 3</option>
+              </select>
+            </div>
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Pincode</span>
+              </div>
+              <input type="number" aria-label="Pincode" class="form-control">
+            </div>
+          </form>
         </div>
         <div class="col-sm-6">
-          <ul class="list-unstyled">
-            <li>This is a list.</li>
-            <li>It appears completely unstyled.</li>
-            <li>Structurally, it's still a list.</li>
-            <li>However, this style only applies to immediate child elements.</li>
-            <li>Nested lists:
-              <ul>
-                <li>are unaffected by this style</li>
-                <li>will still show a bullet</li>
-                <li>and have appropriate left margin</li>
-              </ul>
-            </li>
-            <li>This may still come in handy in some situations.</li>
-          </ul>
-          <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
-          <blockquote class="blockquote text-right">
-            <p class="mb-0">Our planet is a lonely speck in the great enveloping cosmic dark.</p>
-            <footer class="blockquote-footer">The Very Famous <cite title="Source Title">Carl Sagan</cite></footer>
-          </blockquote>
-          <p>In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-            The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.
-            It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <img width="100%" src="images/07.png"/>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Book Title</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <h5>Book Title: Name of the Book</h5>
+                    <p>By Dr. Professor Name</p>
+                  </td>
+                  <td>1</td>
+                  <td><strong>₹599/-</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <h5>Book Title: A Very Very Long Name of the Book</h5>
+                    <p>By Dr. Professor Name, Dr. Science Teacher</p>
+                  </td>
+                  <td>1</td>
+                  <td><strong>₹1,599/-</strong></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><p class="text-right">Total:</p></td>
+                  <td>2</td>
+                  <td><p>₹2,198/-</p></td>
+                </tr>
+                <tr>
+                  <td colspan="3"><p class="text-right">Discount:</p></td>
+                  <td><p>-₹200/-</p></td>
+                </tr>
+                <tr>
+                  <td colspan="3"><p class="text-right">Shipping Cost:</p></td>
+                  <td><p>₹100/-</p></td>
+                </tr>
+                <tr>
+                  <td colspan="3"><p class="text-right">Tax:</p></td>
+                  <td><p>₹100/-</p></td>
+                </tr>
+                <tr>
+                  <td colspan="3"><h4 class="text-right">Total Amount:</h4></td>
+                  <td><h4>₹2500/-</h4></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a class="btn btn-default btn-outline-dark" href="cart.html">Go Back</a>
+          <button class="btn btn-lg ebl-btn-red float-right" >Make Payment</button>
         </div>
       </div>
     </div>
-
 
     <footer>
       <!-- PREFOOTER -->
