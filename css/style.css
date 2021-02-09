@@ -213,7 +213,10 @@ body{
 }
 
 /* EBL BOOKS SLIDER */
-.ebl-books-wrapper{ margin: 80px 0; }
+.ebl-books-wrapper{
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
 .ebl-books-slider-wrap {
   width: 98%;
 	overflow: hidden;
@@ -378,6 +381,39 @@ body{
 .ebl-books-wrapper .page-item.active .page-link {
   background-color: #d08301;
   border-color: #222;
+}
+.ebl-breadcrumb a {
+  color:black;
+}
+/* ------------------- SINGLE PRODUCT ----------------------*/
+.ebl-product-img img {
+  max-width: 100%;
+}
+.ebl-price {
+  font-weight: 700;
+  color: #d40707;
+}
+.ebl-stock {
+  padding:8px;
+  border-radius: 20px;
+  background-color: #e7e6e6;
+  width:20%;
+  text-align: center;
+  display: block;
+  margin:16px 0;
+}
+.ebl-stock i {
+  color:#238d30;
+}
+.ebl-btn-red {
+  background-color: #d40707;
+  color: white;
+}
+.ebl-reviews {
+  font-size: 14px;
+}
+.ebl-stars {
+  cursor: pointer;
 }
 /* ------------------- FOOTER ----------------------*/
 .ebl-prefooter{
@@ -579,6 +615,9 @@ body{
   /* EBL NEWSLETTER */
   .ebl-banner-small{
     padding: 80px 5%;
+  }
+  .ebl-stock {
+    width:50%;
   }
 
   /* FOOTER */
