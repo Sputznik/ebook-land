@@ -9,30 +9,11 @@ body{
   margin: 0;
 }
 
-/* SLICK SLIDER */
-.slick-slider{ position:relative;display:block;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent; }
-.slick-list{ position:relative;display:block;overflow:hidden;margin:0;padding:0; }
-.slick-list:focus{ outline:none; }
-.slick-list.dragging{ cursor:pointer;cursor:hand; }
-.slick-slider .slick-track, .slick-slider .slick-list{ -webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0); }
-.slick-track{ position:relative;top:0;left:0;display:block; }
-.slick-track:before, .slick-track:after{ display:table;content:'';}
-.slick-track:after{ clear:both; }
-.slick-loading .slick-track{ visibility:hidden; }
-.slick-slide{ display:none;float:left;height:100%;min-height:1px;outline: none; }
-[dir='rtl'] .slick-slide{ float:right; }
-.slick-slide img{ display:block; outline: none; }
-.slick-slide.slick-loading img{ display:none; }
-.slick-slide.dragging img{ pointer-events:none; }
-.slick-initialized .slick-slide{ display:block; }
-.slick-loading .slick-slide{ visibility:hidden; }
-.slick-vertical .slick-slide{ display:block;height:auto;border:1px solid transparent; }
-
-/* HEADER */
+/* ------------- HEADER ----------------- */
 .ebl-nav .navbar-brand {
   padding:10px;
 }
-.ebl-nav .navbar-brand img {
+.ebl-nav .navbar-brand img { /* size of logo */
   width:auto;
   height:50px;
 }
@@ -43,8 +24,8 @@ body{
   color:#ecb000;
 }
 
-/* BANNER SECTION */
-.ebl-banner {
+/* -------------- BANNER SECTION ------------------ */
+.ebl-banner { /* large banner */
   position: relative;
   min-height: calc( 100vh - 80px );
   background: url("../images/banner-homepage.jpg");
@@ -54,23 +35,19 @@ body{
   display: flex;
   align-items: center;
 }
-
-
-.ebl-search-inner{
+.ebl-banner-inner{
   text-align: center;
   width: 100%;
 }
-.ebl-search-inner > .cursive-text{
+.ebl-banner-inner > .cursive-text{
   font-weight: 600;
-  margin: 0 0 30px;
+  margin-bottom: 30px;
 }
-
 .ebl-banner form, .ebl-banner-small form {
   width: 100%;
-  max-width: 790px;
+  max-width: 790px; /* search bar width */
   margin: 0 auto;
 }
-
 .ebl-banner form .inner-form, .ebl-banner-small form .inner-form {
   display: -ms-flexbox;
   display: flex;
@@ -84,11 +61,9 @@ body{
   overflow: hidden;
   margin-bottom: 30px;
 }
-
 .ebl-banner form .inner-form .input-field, .ebl-banner-small form .inner-form .input-field {
   height: 68px;
 }
-
 .ebl-banner form .inner-form .input-field input, .ebl-banner-small form .inner-form .input-field input {
   display: block;
   width: 100%;
@@ -101,13 +76,10 @@ body{
 }
 .ebl-banner form .inner-form .input-field input::placeholder,
 .ebl-banner form .inner-form .input-field input:-moz-placeholder,
-.ebl-banner form .inner-form .input-field input::-webkit-input-placeholder{
-  color: #dddddd;
-  font-size: 16px;
-}
+.ebl-banner form .inner-form .input-field input::-webkit-input-placeholder,
 .ebl-banner-small form .inner-form .input-field input::placeholder,
 .ebl-banner-small form .inner-form .input-field input:-moz-placeholder,
-.ebl-banner-small form .inner-form .input-field input::-webkit-input-placeholder{
+.ebl-banner-small form .inner-form .input-field input::-webkit-input-placeholder {
   color: #dddddd;
   font-size: 16px;
 }
@@ -118,7 +90,8 @@ body{
   outline: 0;
 }
 
-.ebl-banner form .inner-form .input-field:nth-child(1), .ebl-banner-small form .inner-form .input-field:nth-child(1) {
+.ebl-banner form .inner-form .input-field:nth-child(1),
+.ebl-banner-small form .inner-form .input-field:nth-child(1) {
   -ms-flex-positive: 1;
   flex-grow: 1;
   display: -ms-flexbox;
@@ -134,23 +107,16 @@ body{
 }
 
 .ebl-banner form .inner-form .input-field:nth-child(2), .ebl-banner-small form .inner-form .input-field:nth-child(2) {
-  min-width: 216px;
+  min-width: 216px; /* adds width to the search button */
 }
 
-.ebl-banner form .inner-form .input-field:nth-child(2) .btn-search, .ebl-banner-small form .inner-form .input-field:nth-child(2) .btn-search {
+.ebl-banner form .inner-form .input-field:nth-child(2) .btn-search,
+.ebl-banner-small form .inner-form .input-field:nth-child(2) .btn-search {
   position: relative;
   display: block;
-  height: 100%;
-  width: 100%;
-  white-space: nowrap;
-  font-size: 16px;
   color: #ffffff;
-  border: 0;
   cursor: pointer;
-  z-index: 0;
-  background: #181818;
-  font-weight: 300;
-  text-decoration: none;
+  background: #111;
 }
 .btn-search .desktop i{
   font-size: 20px;
@@ -158,7 +124,7 @@ body{
   display: inline-block;
 }
 .btn-search .desktop,
-.btn-search .mobile{
+.btn-search .mobile{ /* to handle search button text or icon */
   line-height: 68px;
 }
 .btn-search .mobile{
@@ -170,7 +136,7 @@ body{
   box-shadow: none;
 }
 
-/* YELLOW STRIP */
+/*---------- YELLOW STRIP ON HOMEPAGE ---------------------- */
 .yellow-strip{
   height: auto;
   padding: 20px 0;
@@ -212,7 +178,7 @@ body{
   margin-bottom: 5px;
 }
 
-/* EBL BOOKS SLIDER */
+/* -------- EBL BOOKS SLIDER used on homepage, related books --------*/
 .ebl-books-wrapper{
   margin-top: 64px;
   margin-bottom: 64px;
@@ -301,7 +267,7 @@ body{
   text-decoration: none;
   outline: none;
 }
-.ebl-books-wrapper .shop-all-mob{ display: none; }
+.ebl-books-wrapper .shop-all-mob{ display: none; } /* hides shop all button below - only on small screens */
 .ebl-slider-headline h2,
 .ebl-slider-headline .shop-all,
 .ebl-books-wrapper .shop-all-mob{ color: #313131; }
@@ -320,47 +286,66 @@ body{
   margin-left: 10px;
   font-size: 18px;
 }
+/* SLICK SLIDER */
+.slick-slider{ position:relative;display:block;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent; }
+.slick-list{ position:relative;display:block;overflow:hidden;margin:0;padding:0; }
+.slick-list:focus{ outline:none; }
+.slick-list.dragging{ cursor:pointer;cursor:hand; }
+.slick-slider .slick-track, .slick-slider .slick-list{ -webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0); }
+.slick-track{ position:relative;top:0;left:0;display:block; }
+.slick-track:before, .slick-track:after{ display:table;content:'';}
+.slick-track:after{ clear:both; }
+.slick-loading .slick-track{ visibility:hidden; }
+.slick-slide{ display:none;float:left;height:100%;min-height:1px;outline: none; }
+[dir='rtl'] .slick-slide{ float:right; }
+.slick-slide img{ display:block; outline: none; }
+.slick-slide.slick-loading img{ display:none; }
+.slick-slide.dragging img{ pointer-events:none; }
+.slick-initialized .slick-slide{ display:block; }
+.slick-loading .slick-slide{ visibility:hidden; }
+.slick-vertical .slick-slide{ display:block;height:auto;border:1px solid transparent; }
 
-/* EBL HIGHLIGHT BANNER (INCLUDING FOR PAGES) */
+
+/* ------- EBL HIGHLIGHT BANNER (Also used on page banners) ------- */
 .ebl-banner-small{
   color: #313131;
   background: rgb(236,176,0);
   background: linear-gradient(90deg, rgba(236,176,0,1) 0%, rgba(208,131,1,1) 100%);
   padding: 100px 120px;
 }
-.ebl-banner-small .ebl-newsletter-inner{
+.ebl-banner-small .ebl-highlight-inner{
   width: 100%;
   max-width: 600px;
   border-bottom: 2px solid #313131;
   padding-bottom: 5px;
 }
-.ebl-newsletter-inner > h2.title{
+.ebl-highlight-inner > h2.title{
   margin-bottom: 25px;
 }
-.ebl-newsletter-inner > p.subtitle{
+.ebl-highlight-inner > p.subtitle{
   font-size: 18px;
   margin-bottom: 50px;
 }
-.ebl-newsletter-inner > .newsletter-form{
+.ebl-highlight-inner > .newsletter-form{
   display: flex;
   justify-content: space-between;
 }
-.ebl-newsletter-inner input{
+.ebl-highlight-inner input{
   background: transparent;
   border: none;
   outline: none;
   font-size: 20px;
   padding: 0;
 }
-.ebl-newsletter-inner input:first-child{
+.ebl-highlight-inner input:first-child{/* EBL SEARCH */
   color: #313131;
   width: 75%;
 }
-.ebl-newsletter-inner > h2.title,
-.ebl-newsletter-inner .newsletter-btn{
+.ebl-highlight-inner > h2.title,
+.ebl-highlight-inner .newsletter-btn{
   font-weight: 600;
 }
-.ebl-newsletter-inner input::placeholder{
+.ebl-highlight-inner input::placeholder{
   color: #313131;
 }
 
@@ -419,31 +404,6 @@ body{
 .ebl-prefooter{
   background-color: #292929;
   padding: 50px 0;
-}
-
-.ebl-prefooter .ebl-col-2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.ebl-prefooter .ebl-col-2 .col {
-  margin: 0;
-  width: 100%;
-}
-
-.ebl-prefooter .col {
-  padding: 0 16px;
-  padding-left: 50px;
-}
-
-.ebl-prefooter .two-list{
-  margin: 0;
-}
-
-.ebl-prefooter .two-list > li{
-  display: block;
-  margin-bottom: 24px;
 }
 
 .ebl-prefooter .footer-logo{
@@ -507,7 +467,10 @@ body{
   margin-left: 5px;
 }
 
-.ebl-prefooter .social a:first-child{ margin-left: 0; }
+.ebl-prefooter .social a:first-child {
+  margin-left: 0;
+}
+
 .ebl-copyright{
   height: 80px;
   color: #ffffff;
@@ -519,7 +482,7 @@ body{
 
 
 /* ------------------- MEDIA QUERIES ---------------------------- */
-@media( min-width: 960px ){
+@media( min-width: 1100px ){
   /* YELLOW STRIP */
   .yellow-strip > ul > li:after{
     content:"";
@@ -546,45 +509,6 @@ body{
     width: 40%;
     margin-right: 10%;
   }
-}
-@media (min-width: 800px ){
-  /* FOOTER */
-  .ebl-prefooter .two-list > li{
-    float: left;
-    width: 47%;
-    margin: 0 5% 16px 0;
-  }
-  .ebl-prefooter .two-list > li:last-child{
-    margin: 0 0 16px;
-  }
-}
-
-@media (min-width: 768px) {
-  /* EBL SEARCH */
-  .ebl-banner form .inner-form .input-field:nth-child(2) .btn-search {
-    transition: all .2s ease-out, color .2s ease-out;
-  }
-  .ebl-banner form .inner-form .input-field:nth-child(2) .btn-search:hover {
-    background: #313131;
-  }
-}
-
-@media(max-width: 992px) {
-  /* EBL SEARCH */
-  .ebl-banner form .inner-form .input-field {
-    height: 50px;
-  }
-  .btn-search .desktop,
-  .btn-search .mobile{
-    line-height: 50px;
-  }
-  .ebl-nav .navbar-header {
-    width:100%;
-  }
-}
-
-@media(max-width:960px){
-  /* YELLOW STRIP */
   .yellow-strip{
     padding: 20px 25px;
   }
@@ -596,8 +520,19 @@ body{
 }
 
 
+@media (min-width: 768px) {
+
+}
+
+
 @media (max-width: 768px){
-  /* EBL SEARCH */
+  .ebl-nav .navbar-header {
+    width:100%;
+  }
+  /* EBL SEARCH AND BANNER */
+  .ebl-banner form .inner-form .input-field:nth-child(2) .btn-search {
+    transition: all .2s ease-out, color .2s ease-out;
+  }
   .ebl-banner form .inner-form .input-field input, .ebl-banner-small form .inner-form .input-field input{ padding-left: 20px; }
   .ebl-banner form .inner-form .input-field:nth-child(2), .ebl-banner-small form .inner-form .input-field:nth-child(2){
     min-width: 20% !important;
@@ -611,11 +546,13 @@ body{
   .btn-search .mobile{
     display: inline-block;
   }
-
-  /* EBL NEWSLETTER */
+  .ebl-banner {
+    padding: 0 5%;
+  }
   .ebl-banner-small{
     padding: 80px 5%;
   }
+
   .ebl-stock {
     width:50%;
   }
@@ -628,26 +565,16 @@ body{
   .ebl-prefooter .site-desc{
     margin-bottom: 30px;
   }
-  .ebl-prefooter .two-list{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ebl-prefooter .two-list > li{
-    width: 50%;
-  }
   .ebl-prefooter .site-desc,
   .ebl-copyright{ font-size: 16px; }
 }
 
-@media (max-width: 600px){
-  /* FOOTER */
-  .ebl-prefooter .two-list > li{
-    width: 100%;
+@media (max-width: 480px){
+  /* HEADER LOGO */
+  .ebl-nav .navbar-brand img {
+    width:auto;
+    height:40px;
   }
-  /* EBL BOOKS SLIDER */
-  .ebl-slider-headline .shop-all{ display: none; }
-  .ebl-books-wrapper .shop-all-mob{ display: inline-block; margin-top: 20px; }
-
   /* YELLOW STRIP */
   .yellow-strip > ul{
     display: block;
@@ -660,17 +587,12 @@ body{
   .yellow-strip .cell-wrapper > span{
     flex: unset;
   }
-}
-
-@media (max-width: 480px){
-  .ebl-nav .navbar-brand img {
-    width:auto;
-    height:40px;
-  }
   /* EBL BOOKS SLIDER */
   .ebl-books-slider-wrap{ padding: 36px 30px 36px; }
   .ebl-books-slider > button.slick-prev{ left: -15px; }
   .ebl-books-slider > button.slick-next{ right: -15px; }
+  .ebl-slider-headline .shop-all{ display: none; }
+  .ebl-books-wrapper .shop-all-mob{ display: inline-block; margin-top: 20px; } /* shows shop all button below - only on small screens */
   /* EBL SEARCH SECTION */
-  .ebl-search-inner > h2 { font-size: 22px; }
+  .ebl-banner-inner > h2 { font-size: 22px; }
 }
