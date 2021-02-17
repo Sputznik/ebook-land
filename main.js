@@ -52,6 +52,7 @@ jQuery(document).ready(function(){
 
 			$this.addClass( 'loaded' );
 	});
+	//for product review stars
 	jQuery('.ebl-stars i').hover( function(){
 		$(this).removeClass('fa-star-o');
 		$(this).addClass('fa-star');

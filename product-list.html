@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body>
-
+    <!-- WEBSITE HEADER NAVIGATION -------------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ebl-nav">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,7 +25,6 @@
           </button>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -56,9 +55,9 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <!-- BANNER SECTION -->
+    <!-- BANNER SECTION --------------------------------->
     <div class="ebl-banner-small">
-      <div class="ebl-search-inner">
+      <div class="ebl-banner-inner">
         <h2 class="cursive-text">Online Store</h2>
         <form>
           <div class="inner-form">
@@ -76,15 +75,13 @@
       </div>
     </div>
 
-
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT --------------------------------->
 
     <div class="container-fluid ebl-books-wrapper" id="main">
       <div class="row">
-        <!-- FILTER FORM -->
-        <div class="col-sm-3 ebl-filter-form border-right">
+        <div class="col-sm-3 ebl-filter-form border-right"> <!-- FILTER FORM - FIRST COLUMN -->
           <div>
-            <a role="button" class="btn btn-outline-dark d-block d-sm-none mb-4" href="#ebl-list-header"><i class="fa fa-arrow-down"></i> Skip to main content</a>
+            <a role="button" class="btn btn-outline-dark d-block d-sm-none mb-4" href="#ebl-list-header"><i class="fa fa-arrow-down"></i> Skip to books list</a> <!-- ONLY ON SMALL SCREENS, TO SKIP FILTER FORM-->
             <h3>Filter Books</h3>
 
             <div class="ebl-filter my-5">
@@ -169,13 +166,13 @@
 
           </div>
         </div>
-        <!-- PRODUCT LIST -->
-        <div class="col-sm-9">
+
+        <div class="col-sm-9"> <!-- PRODUCT LIST - SECOND COLUMN -->
           <div class="pb-3 border-bottom border-dark" id="ebl-list-header">
-            <div class="ebl-breadcrumb">
+            <div class="ebl-breadcrumb"> <!-- BREADCRUMB -->
               <p><a>Home</a> > <a>Store</a> > Category-name</a></p>
             </div>
-            <div class="ebl-list-title-sort row">
+            <div class="ebl-list-title-sort row"> <!-- SORTING CONTROL -->
               <h1 class="font-weight-bold col-sm-8">Category Name</h1>
               <select class="custom-select col-sm-4">
                 <option selected>Sort List</option>
@@ -185,7 +182,7 @@
               </select>
             </div>
           </div>
-          <div class="ebl-books row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <div class="ebl-books row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"> <!-- BOOKS LIST -->
             <div class="ebl-book col px-4">
               <img src="images/img_math_1.jpg" alt="">
               <div class="ebl-book-meta">
@@ -314,8 +311,7 @@
             </div>
           </div>
 
-          <!-- INNER PAGINATION -->
-          <nav aria-label="Page navigation" class="mt-5">
+          <nav aria-label="Page navigation" class="mt-5"> <!-- INNER PAGINATION -->
             <ul class="pagination justify-content-center">
               <li class="page-item disabled">
                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -330,17 +326,14 @@
           </nav>
         </div>
       </div>
-    </div>
-
-
-
+    </div> <!-- / MAIN -->
 
     <footer>
       <!-- PREFOOTER -->
       <div class="ebl-prefooter">
         <div class="container-fluid">
-          <div class="ebl-col-2">
-            <div class="col">
+          <div class="row">
+            <div class="col-sm-6">
               <a href="#" class="footer-logo">
                 <img src="images/Logo.png">
               </a>
@@ -350,71 +343,67 @@
                 more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
               </p>
               </div>
-              <div class="col">
-                <ul class="two-list list-unstyled">
-                  <li>
-                    <div class="footer-menu">
-                      <ul class="list-unstyled">
-                        <li class="menu-title">Helpful Links</li>
-                        <li>
-                          <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                          <a href="#">Shopping Cart</a>
-                        </li>
-                        <li>
-                          <a href="#">Shipping Info</a>
-                        </li>
-                        <li>
-                          <a href="#">Track an Order</a>
-                        </li>
-                        <li>
-                          <a href="#">Returns</a>
-                        </li>
-                        <li>
-                          <a href="#">Browse Categories</a>
-                        </li>
-                        <li>
-                          <a href="#">Search Tips</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="footer-menu">
-                      <ul class="list-unstyled">
-                        <li class="menu-title">About BookLand</li>
-                        <li>
-                          <a href="#">Our Story</a>
-                        </li>
-                        <li>
-                          <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                          <a href="#">Testimonials</a>
-                        </li>
-                        <li>
-                          <a href="#">Join Our Team</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="social">
-                      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                      <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                    </div>
-                  </li>
-                </ul>
+              <div class="col-sm-3">
+                <div class="footer-menu">
+                  <ul class="list-unstyled">
+                    <li class="menu-title">Helpful Links</li>
+                    <li>
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Shopping Cart</a>
+                    </li>
+                    <li>
+                      <a href="#">Shipping Info</a>
+                    </li>
+                    <li>
+                      <a href="#">Track an Order</a>
+                    </li>
+                    <li>
+                      <a href="#">Returns</a>
+                    </li>
+                    <li>
+                      <a href="#">Browse Categories</a>
+                    </li>
+                    <li>
+                      <a href="#">Search Tips</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="footer-menu">
+                  <ul class="list-unstyled">
+                    <li class="menu-title">About BookLand</li>
+                    <li>
+                      <a href="#">Our Story</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#">Join Our Team</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="social">
+                  <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </div>
               </div>
           </div>
         </div>
       </div>
 
-      <!-- COPYRIGHT -->
+      <!-- FOOTER COPYRIGHT -------------------->
       <div class="ebl-copyright">&copy; BookLand 2020</div>
     </footer>
 
-
+    <!-- JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
