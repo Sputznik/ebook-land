@@ -139,7 +139,7 @@ body{
 /*---------- YELLOW STRIP ON HOMEPAGE ---------------------- */
 .yellow-strip{
   height: auto;
-  padding: 20px 0;
+  padding: 20px 10px;
   border-top: 6px solid #313131;
   border-bottom: 6px solid #353535;
   background-color: #fdce00;
@@ -184,7 +184,6 @@ body{
   margin-bottom: 64px;
 }
 .ebl-books-slider-wrap {
-  width: 98%;
 	overflow: hidden;
 	margin: 0 auto;
 	padding: 36px 100px 36px;
@@ -256,14 +255,12 @@ body{
 .ebl-slider-headline h2{
 	display: inline-block;
 	font-weight: bold;
-	padding: 0 10px;
 	margin: 30px 0;
 }
 .ebl-slider-headline .shop-all,
 .ebl-books-wrapper .shop-all-mob{
   display: inline-block;
   font-size: 20px;
-  padding: 0 10px;
   text-decoration: none;
   outline: none;
 }
